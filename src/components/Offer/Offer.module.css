@@ -1,19 +1,20 @@
 .offerContainer {
     background-size: cover;
     background-position: center;
-    height: 220px; /* Set a fixed height or adjust as needed */
+    height: 220px;
     margin: 20px;
     border-radius: 20px;
+   
   }
   
   .textOverlay {
     position: relative;
-    top: 50%; /* Adjust as needed to vertically center the text */
+    top: 50%;
     transform: translateY(-50%);
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px; /* Add padding to the text container */
+    padding: 20px; 
   }
   
   h1 {

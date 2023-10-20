@@ -46,7 +46,7 @@ const Restaurant = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          margin: "40px 20px",
+          
          
         }}
       >
