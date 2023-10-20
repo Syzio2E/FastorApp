@@ -1,0 +1,118 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.OtpPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+ 
+  
+  /* Styles for the back arrow icon */
+    .OtpPage .back-arrow {
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      top: 40px;
+      margin-left: -270px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 30px;
+    }
+    
+    
+
+  .OtpPage .back-arrow:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfafa;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+  
+  /* Styles for the OTP verification form */
+  .OtpPage .otp-form {
+    flex:1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 375px;
+   margin-top: 50px;
+  }
+  
+  /* Styles for the OTP verification label and description */
+  .OtpPage .otp-form label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .OtpPage .otp-form p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Styles for the OTP input container */
+  .OtpPage .otp-container {
+    display: flex;
+    justify-content: center;
+    width: 260px; /* Increase the width for better spacing */
+    margin: 20px auto;
+  }
+  
+  /* Styles for the OTP input boxes */
+  .OtpPage .otp-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px; /* Increase the font size for better visibility */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin: 2px;
+   
+  }
+  
+  /* Style for focusing an OTP input box
+  .OtpPage .otp-input:focus {
+    border-color: #007bff;
+  } */
+  
+  /* Styles for the Verify button */
+  .OtpPage .otp-form button {
+    background-color:crimson !important;
+    color: #fff;
+    font-weight:bold ;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px; /* Increase padding for a larger button */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  /* Styles for the "Resend" link */
+  .OtpPage .resend-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the "Resend" link */
+  .OtpPage .resend-link:hover {
+    text-decoration: underline;
+  }

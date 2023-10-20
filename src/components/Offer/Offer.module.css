@@ -1,0 +1,47 @@
+.offerContainer {
+    background-size: cover;
+    background-position: center;
+    height: 220px; /* Set a fixed height or adjust as needed */
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  .textOverlay {
+    position: relative;
+    top: 50%; /* Adjust as needed to vertically center the text */
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; /* Add padding to the text container */
+  }
+  
+  h1 {
+    font-size: 24px;
+    /* Add other text styles */
+  }
+  
+  p {
+    font-size: 18px;
+    /* Add other text styles */
+  }
+  .imageSelector {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    margin: 0 10px; 
+    cursor: pointer;
+    
+  }
+
+  .circle:active{
+    background-color: #ff5733;
+  }

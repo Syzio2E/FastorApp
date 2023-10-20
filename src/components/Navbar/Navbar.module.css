@@ -1,0 +1,74 @@
+.raisedDiv {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+  .userbox{
+    width: 150px;
+    height: 100px;
+    background-color: #eee;
+    margin-right: 10px;
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 20px;
+    z-index: -1;
+   padding: 10px;
+  }
+
+  .logo{
+    display: flex;
+    margin: 20px;
+  }
+
+  .raisedDiv p:first-child {
+    font-weight: bold;
+  }
+  
+  .raisedDiv p:last-child {
+    color: #555;
+  }
+  .secondtitle{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .offer{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, crimson 0%, white 150%);
+  }
+
+  .wallet{
+    background-color: rgb(11, 135, 236);
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, rgb(11, 135, 236) 0%, white 180%);
+  }
+  .enlargeIcon {
+    font-size: 40px; /* Adjust the size as needed */
+    color: white;
+  }

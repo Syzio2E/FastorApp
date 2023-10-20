@@ -1,0 +1,49 @@
+
+  .scrollContainer {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  
+  .scrollContainer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Define media queries for different screen sizes */
+  @media (max-width: 768px) {
+    .scrollContainer {
+     overflow: hidden;
+      justify-content: center;
+    }
+  
+    .scrollContainer > .card {
+      width: 100%; /* Show one card per row */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .scrollContainer > .card {
+      width: 25%; /* Show four cards per row */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .scrollContainer > .card {
+      width: 20%; /* Show five cards per row */
+    }
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust gap as needed for spacing between cards */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
