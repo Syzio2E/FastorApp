@@ -46,7 +46,7 @@ const Restaurant = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          
+         margin:'40px'
          
         }}
       >
@@ -55,20 +55,19 @@ const Restaurant = () => {
           See All <BiRightArrowCircle />
         </p>
       </div>
-      <div ref={containerRef} className={styles.scrollContainer}>
-      {console.log(displayedRestaurants)}
-        {displayedRestaurants.map((restaurant) => (
-          <Card
-           
-            key={restaurant.restaurant_id}
-            url={restaurant.images[0]?.url}
-            restaurant_name={restaurant.restaurant_name}
-            location_locality={restaurant.location?.location_locality}
-            city_name={restaurant.location?.city_name}
-            color={restaurant.cuisines[0]?.color}
-          />
-        ))}
-      </div>
+      <div ref={containerRef} className={styles.gridContainer}>
+  {console.log(displayedRestaurants)}
+  {displayedRestaurants.map((restaurant) => (
+    <Card
+      key={restaurant.restaurant_id}
+      url={restaurant.images[0]?.url}
+      restaurant_name={restaurant.restaurant_name}
+      location_locality={restaurant.location?.location_locality}
+      city_name={restaurant.location?.city_name}
+      color={restaurant.cuisines[0]?.color}
+    />
+  ))}
+</div>
       <div
         style={{
           display: "flex",

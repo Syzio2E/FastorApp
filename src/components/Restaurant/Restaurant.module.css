@@ -33,14 +33,21 @@
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+  width: 100%;
+  gap: 20px; /* Adjust gap as needed for spacing between cards */
 }
 
-/* Media query for responsiveness */
+/* Media query for responsiveness (decrease size and remove horizontal scrolling) */
 @media (max-width: 768px) {
   .gridContainer {
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: hidden; /* Allow horizontal scrolling */
+  }
+  .gridContainer > .card {
+    flex: 1; /* Each card takes equal width within the container */
+    max-width: 33%; /* Adjust as needed to control the number of visible cards */
   }
 }
